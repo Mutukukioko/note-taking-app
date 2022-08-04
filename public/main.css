@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Fira sans', sans-serif;
+}
+
+body{
+    background-color: #1f314c;
+    background-image: 
+        radial-gradient(at 47% 33%, hsl(162.00, 77%, 40%) 0, transparent 59%), 
+        radial-gradient(at 82% 65%, hsl(180.00, 0%, 0%) 0, transparent 55%);
+}
+
+.app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.home{
+    max-width:100%;
+    padding: 50px 30px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    text-align: center;
+}
+
+.form{
+    color: #0ed32f;
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    padding: 50px 30px;
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(17, 25, 40, 0.75);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.125);
+
+}
+
+form h1 {
+    color: #FFF;
+    font-size: 36px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+.err-msg {
+    padding: 10px 15px;
+    background-color: #fff;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    color: red;
+    box-shadow: opx 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+form .form-group {
+    margin-bottom: 30px;
+}
+
+form label {
+    display: block;
+    color: #eee;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+form input {
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+
+form input:not([type="submit"]){
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 0px 0px rgba(0,0,0,0);
+    transition: #222;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+form input:not([type="submit"])::placeholder{
+    color: #ccc;
+}
+
+
+form input:not([type="submit"]):focus, form input:not([type ="submit"]):valid{
+    background-color: #fff;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+form input[type="submit"]{
+    display: block;
+    width: 100%;
+    padding: 15px;
+    border-radius: 8px;
+    background-color: #2be259;
+    box-shadow: 0px 0px 0px rgba(0,0,0,0);
+    transition: 0.4s;
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+
+

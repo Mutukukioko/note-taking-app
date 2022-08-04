@@ -1,0 +1,28 @@
+<form action="/login" method="Post" class="form">
+<div>
+    {{#if error}}
+   <p class="err-msg">password or username incorrect</p>
+    {{/if}}
+    <h1> Login </h1>
+</div>
+<div class="form-group">
+   
+    <label>Username: </label>
+    <input type="text" name="username" id="name" placeholder="Enter your username" required>
+
+</div>
+<div class="form-group">
+   
+    <label>Password: </label>
+    <input type="password"
+     name="pasword"
+      id="password"
+       placeholder="Enter your password"
+        required>
+
+</div>
+<div>
+    <input type="submit" value="Login">
+</div>
+
+</form>
